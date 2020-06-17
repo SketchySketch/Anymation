@@ -1,0 +1,18 @@
+.ball {
+	width:20px;
+	height: 20px;
+	margin-top: 300px;
+	margin-left: 300px;
+	background-color: #ff5c5c;
+	border-radius: 10px;
+	border-top-style: solid;
+	border-top-width: 20px;
+	border-top-color: #ee4b4b;	
+	animation: spiral 5s ease infinite;
+}
+
+@keyframes spiral{
+	0% {transform: rotate(0deg) translateY(0px);}
+	50% {transform: rotate(900deg) translateY(90px);}
+	100% {transform: rotate(1800deg) translateY(0px);}
+}

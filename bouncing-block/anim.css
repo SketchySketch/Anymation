@@ -1,0 +1,73 @@
+body {
+	background-color: #fff;
+}
+
+.all {
+	background-color: inherit;
+	animation: grow 2s cubic-bezier(1,0,.63,1.35) infinite;
+}
+
+.block {
+	position: absolute;
+	top: 400px;
+	left: 200px;
+	height: 200px;
+	width: 100px;
+	background-color: #4169e1;
+	border-radius: 5px;
+	z-index: 0;
+}
+
+.windows {
+	width: 60px;
+	height: 120px;
+}
+
+.board {
+	position: absolute;
+	z-index: 30;
+	background-color: inherit;
+	width: 200px;
+	height: 500px;
+	border-top-style: solid;
+	border-top-width: 10px;
+	border-top-color: #888;
+	top: 400px;
+	left: 150px;
+}
+
+.i, .ii, .iii, .iv {
+	z-index: 1;
+	position: absolute;
+	width: 20px;
+	height: 40px;
+	border-radius: 3px;
+	background-color: #638bf3;
+}
+
+.i {
+	top: 440px;
+	left: 220px;
+}
+
+.ii {
+	top: 440px;
+	left: 260px;
+}
+
+.iii {
+	top: 520px;
+	left: 260px;
+}
+
+.iv {
+	top: 520px;
+	left: 220px;
+}
+
+@keyframes grow {
+	0% {transform: translateY(0px);}
+	40% {transform: translateY(-200px);}
+	60% {transform: translateY(-200px);}
+	100% {transform: translateY(0px);}
+}
